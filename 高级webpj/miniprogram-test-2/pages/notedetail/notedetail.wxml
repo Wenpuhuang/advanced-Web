@@ -1,0 +1,19 @@
+<!--pages/notedetail/notedetail.wxml-->
+<view class='container flex justify-center'>
+  <view class="flex solid-bottom justify-center c_top">
+    <view class="bg-grey padding-sm margin-xs radius">知识点</view>
+    <view class="bg-orange padding-sm margin-xs radius">{{kpname}}</view>
+  </view>
+  <view class="cu-form-group align-start c_cen">
+    <view class="title">笔记</view>
+    <textarea class='text_in' value='{{notetext}}' maxlength="-1" bindinput="textareaBInput" placeholder="待输入"></textarea>
+  </view>
+  <view class="flex solid-bottom padding justify-center c_bot">
+    <view class="padding-sm margin-xs radius">
+      <button class='cu-btn round bg-green btn-edit' bindtap='savenote'>保存</button>
+    </view>
+    <view class="padding-sm margin-xs radius">
+      <button class='cu-btn round bg-red btn-edit' bindtap='delnote'>删除</button>
+    </view>
+  </view>
+</view>

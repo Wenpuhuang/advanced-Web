@@ -1,0 +1,23 @@
+/* pages/fav/fav.wxss */
+page {
+    height: 100%;
+}
+button::after{
+    border: none;
+}
+.warp button {
+    width: 100%;
+    height:100%;
+    position: center;
+    border-radius:0px 0px 0px 0px;
+    color: red;
+    background:transparent no-repeat center center;
+}
+.btn-del{
+  text-align: center;
+  top: 18%
+}
+.desc{
+  max-width: 200rpx;
+  overflow: hidden
+}

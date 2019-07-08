@@ -1,0 +1,24 @@
+/* pages/paper/paper.wxss */
+
+page {
+  padding-bottom: 100rpx;
+}
+
+.item {
+  margin: 20rpx;
+  border-radius: 20rpx;
+  border: solid 1px orange;
+}
+
+.desc {
+  border-bottom: solid 1px orange;
+  padding: 5rpx;
+}
+
+.foot-test {
+  background: #f7f7f6;
+}
+
+.test-btn {
+  border-radius: 10rpx;
+}

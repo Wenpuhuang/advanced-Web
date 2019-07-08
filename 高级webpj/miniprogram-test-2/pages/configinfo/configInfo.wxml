@@ -1,0 +1,45 @@
+<!--pages/configInfo/configInfo.wxml-->
+<view class='container'>
+  <view class='bg-white padding personalinfo card-shadow'>
+    <view class='info'>
+      <view class="solid-bottom text-xl padding bg-t">
+        <text class="text-black text-bold">{{name}}</text>
+      </view>
+      <view class="text-df padding bg-t">
+        <text class="text-black">学号:{{stdno}}</text>
+      </view>
+    </view>
+    <view class="cu-avatar round lg margin-left userinfo-avatar" style='background-image:url({{userInfo.avatarUrl}});'>
+      <view class="cu-tag badge {{studengt.gender?'cuIcon-female bg-pink':'cuIcon-male bg-blue'}}"></view>
+    </view>
+  </view>
+
+  <view class="cu-bar bg-white solid-bottom margin-top other">
+    <view class="action">
+      <text class="cuIcon-title text-orange "></text> 其他
+    </view>
+  </view>
+  <view class='cu-list grid col-3 other'>
+    <view class="cu-item">
+      <navigator url="../fav/fav" hover-class="none">
+        <view class="cuIcon-favorfill text-orange">
+          <text>收藏</text>
+        </view>
+      </navigator>
+    </view>
+    <view class="cu-item">
+      <navigator url="../note/note" hover-class="none">
+        <view class="cuIcon-formfill text-orange">
+          <text>笔记</text>
+        </view>
+      </navigator>
+    </view>
+    <view class="cu-item">
+      <navigator url="../perdetail/perdetail" hover-class="none">
+        <view class="cuIcon-myfill text-orange">
+          <text>个人信息</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

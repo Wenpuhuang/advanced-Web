@@ -1,0 +1,17 @@
+/* pages/coursesAll/coursesAll.wxss */
+.bot {
+  border-bottom: solid 0.5px grey
+}
+.course{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  height: 250rpx;
+  position: relative;
+  margin: 30rpx 30rpx 30rpx 30rpx;
+  border-radius: 30rpx;
+}
+.add{
+  text-align: center;
+  margin-top: 80rpx
+}

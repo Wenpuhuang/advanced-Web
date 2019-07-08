@@ -1,0 +1,14 @@
+/* pages/chapter/chapter.wxss */
+page{
+  padding-bottom: 100rpx;
+}
+.nav-en{
+  text-align: center;
+  margin-top: 8rpx
+}
+.foot-test{
+  background:  #f7f7f6;
+}
+.test-btn{
+  border-radius: 10rpx
+}

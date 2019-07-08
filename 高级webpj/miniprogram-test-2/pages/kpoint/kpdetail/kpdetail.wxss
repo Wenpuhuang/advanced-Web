@@ -1,0 +1,10 @@
+/* pages/kpoint/kpdetail/kpdetail.wxss */
+page{
+  padding-bottom: 100rpx;
+}
+.foot-note{
+  background:  #f7f7f6;
+}
+.note-btn{
+  border-radius: 10rpx
+}

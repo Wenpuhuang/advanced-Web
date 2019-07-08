@@ -1,0 +1,20 @@
+<!--pages/kpoint/kpdetail/kpdetail.wxml-->
+<view class="text-xl padding bot">
+  <text class="text-black text-bold">{{kpname}}</text>
+</view>
+<view class='cu-chat'>
+  <view wx:for='{{records}}' class='cu-item'>
+    <view class="cu-avatar radius" style="background-image:url(../../../static/images/avatar.jpg);"></view>
+    <view class="main">
+      <view class="content shadow">
+        <text>{{item.kpdetail}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='cu-bar foot cur padding flex flex-direction foot-note'>
+  <navigator class='nav-en' url='../../notedetail/notedetail?kpid={{kpid}}' hover-class="none">
+    <button class="cu-btn block line-orange lg note-btn">
+      <text class="cuIcon-writefill text-orange"></text>做笔记</button>
+  </navigator>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/coursesAll/coursesAll.wxml-->
+<view class="text-xl padding bot">
+  <text class="text-black text-bold">全部课程</text>
+</view>
+<view wx:for='{{allcourses}}' class='flex p-xs bg-white padding course'>
+  <view class='flex-treble'>
+    <view class="solid-bottom text-xl padding bg-t">
+      <text class="text-black text-bold">{{item.cname}}</text>
+      <text class="text-df text-black">-{{item.tname}}</text>
+    </view>
+    <view class="text-df padding bg-t">
+      <text class="text-black">{{item.desc}}</text>
+    </view>
+  </view>
+  <view class='flex-sub'>
+    <navigator class='add' bindtap='addcourse' hover-class="none">
+      <button class='cu-btn round bg-orange'>添加</button>
+    </navigator>
+  </view>
+</view>

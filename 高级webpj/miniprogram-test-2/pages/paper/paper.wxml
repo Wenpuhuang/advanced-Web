@@ -1,0 +1,37 @@
+<!--pages/paper/paper.wxml-->
+
+<view class="text-xxl padding bot">
+  <text class="text-black padding text-bold">{{cname}}课程测验:</text>
+</view>
+<view>
+  <view wx:for='{{paper}}' data-index='{{index}}' class='item'>
+    <view class='desc'>
+      <text class='text-xxl padding'>{{index+1}}.{{item.decription}}</text>
+    </view>
+    <radio-group class="block">
+      <view class="cu-form-group">
+        <view class="title">{{item.optiona}}</view>
+        <radio></radio>
+      </view>
+      <view class="cu-form-group">
+        <view class="title">{{item.optionb}}</view>
+        <radio></radio>
+      </view>
+      <view class="cu-form-group">
+        <view class="title">{{item.optionc}}</view>
+        <radio></radio>
+      </view>
+      <view class="cu-form-group">
+        <view class="title">{{item.optiond}}</view>
+        <radio></radio>
+      </view>
+    </radio-group>
+  </view>
+  <view class='warp padding' hidden='{{showan}}'><text>正确答案： {{item.correctoption}}</text></view>
+</view>
+<view class='cu-bar foot cur padding flex flex-direction foot-test'>
+  <navigator class='nav-en' url='' hover-class="none">
+    <button class="cu-btn block line-orange lg test-btn" bindtap='submit'>
+      <text class="cuIcon-writefill text-orange"></text>提交测验</button>
+  </navigator>
+</view>

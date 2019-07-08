@@ -1,0 +1,27 @@
+<!--pages/kpoint/kpoint.wxml-->
+<view class="text-xl padding bot">
+  <text class="text-black text-bold">{{cname}}</text>
+</view>
+<view class="cu-timeline">
+  <view class="cu-time">知识点</view>
+  <view wx:for='{{kps}}' wx:for-index='index' data-index='{{index}}' class="cu-item text-red cuIcon-writefill">
+    <view class="content bg-grey shadow-blur">
+      <view class='flex p-xs'>
+        <view class='flex-treble'>
+          <navigator class='nav-en' url='kpdetail/kpdetail?kpid={{item.kpid}}&&kpname={{item.name}}' hover-class="none">
+            <text class='text-lg'>{{item.name}}\n</text>
+          </navigator>
+        </view>
+        <view class='flex-sub'>
+          <button class='cu-btn round' bindtap='addfav'>
+            <text class="cuIcon-favor text-orange"></text></button>
+        </view>
+        <view class='flex-sub'>
+          <button class='cu-btn round'>
+            <text class="cuIcon-roundcheck text-green"></text>
+          </button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

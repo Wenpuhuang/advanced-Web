@@ -1,0 +1,18 @@
+<!--pages/note/note.wxml-->
+<view class="cu-timeline">
+  <view class="cu-time">笔记</view>
+  <view wx:for='{{notes}}' data-index='{{index}}' class="cu-item text-red cuIcon-writefill">
+    <view class="content bg-grey shadow-blur">
+      <view class='flex p-xs'>
+        <view class='flex-treble'>
+          <text>{{index}}-{{item.kpName}}\n</text>
+        </view>
+        <view class='flex-sub align-center'>
+          <navigator class='nav-en' url='../notedetail/notedetail?kpid={{item.kpID}}&&kpname={{kpName}}&&noteid={{item.noteID}}&&desc={{item.decription}}' hover-class="none">
+            <button class='cu-btn round bg-orange btn-edit'>编辑</button>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

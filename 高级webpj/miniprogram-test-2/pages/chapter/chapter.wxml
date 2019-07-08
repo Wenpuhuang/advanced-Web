@@ -1,0 +1,28 @@
+<!--pages/chapter/chapter.wxml-->
+<view class="text-xl padding bot">
+  <text class="text-black text-bold">{{coursename}}</text>
+</view>
+<view class="cu-timeline">
+  <view class="cu-time">所有章节</view>
+  <view wx:for='{{chapters}}' class="cu-item text-red cuIcon-down">
+    <view class="content bg-grey shadow-blur">
+      <view class='flex p-xs'>
+        <view class='flex-treble'>
+          <text class='solid-bottom'>{{item.name}}\n</text>
+          <text class='text-sm'>{{item.description}}</text>
+        </view>
+        <view class='flex-sub '>
+          <navigator class='nav-en' url='../kpoint/kpoint?chaptername={{item.name}}&&chapterid={{item.chapterid}}' hover-class="none">
+            <button class='cu-btn round bg-orange nav-en'>进入</button>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='cu-bar foot cur padding flex flex-direction foot-test'>
+  <navigator class='nav-en' url='../paper/paper?cname={{coursename}}&&courseid={{courseid}}' hover-class="none">
+    <button class="cu-btn block line-orange lg test-btn">
+      <text class="cuIcon-writefill text-orange"></text>进入课程测验</button>
+  </navigator>
+</view>

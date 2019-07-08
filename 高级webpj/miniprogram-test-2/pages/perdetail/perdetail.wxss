@@ -1,0 +1,4 @@
+/* pages/perdetail/perdetail.wxss */
+.bot {
+  border-bottom: 1px solid lightgray
+}

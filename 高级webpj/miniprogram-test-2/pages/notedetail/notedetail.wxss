@@ -1,0 +1,29 @@
+/* pages/notedetail/notedetail.wxss */
+
+.container {
+  width: 90%;
+  height: 80%!important;
+  border-radius: 30rpx;
+  background-color: lightyellow;
+  padding: 20rpx!important;
+  margin-left: 5%;
+  margin-top: 20%;
+}
+
+.c_top {
+  height: 100rpx!important;
+}
+
+.c_cen {
+  width: 90%;
+  height: 500rpx!important;
+}
+.text_in{
+  height: 16em!important;
+
+}
+.c_bot {
+  position: relative;
+  bottom: 20;
+  height: 200rpx!important;
+}
